@@ -2,56 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Dona $1 o lo que puedas</title>
+  <title>Dona al Código</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #e0f7fa, #80deea);
-      color: #333;
-      text-align: center;
-      padding: 60px 20px;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
+      color: #58a6ff;
+      font-size: 3em;
+      margin-bottom: 20px;
     }
     p {
-      font-size: 1.2em;
+      color: #8b949e;
+      font-size: 1.4em;
       margin-bottom: 30px;
+      text-align: center;
     }
-    .donar-btn {
-      background-color: #009ee3;
-      color: white;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      border: none;
+    .console-box {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      padding: 40px 20px;
       border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 10px #00000055;
+      text-align: center;
     }
-    .donar-btn:hover {
-      background-color: #007bb8;
+    .donate-btn {
+      background-color: #238636;
+      color: white;
+      text-decoration: none;
+      padding: 15px 35px;
+      border-radius: 8px;
+      font-size: 18px;
+      display: inline-block;
+      margin-top: 10px;
+      transition: background-color 0.3s;
+    }
+    .donate-btn:hover {
+      background-color: #2ea043;
     }
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #666;
+      margin-top: 50px;
+      font-size: 1em;
+      color: #6e7681;
     }
   </style>
 </head>
 <body>
+  <h1>💻 Dona al Código</h1>
+  <p>Tu donación apoya el desarrollo de proyectos hechos por programadores como tú.</p>
 
-  <h1>¡Ayúdame con una donación!</h1>
-  <p>Con tu aporte voluntario apoyas este proyecto. Puedes donar $1 o cualquier valor 💙</p>
-
-  <a class="donar-btn" href="https://link.mercadopago.com.co/donacion2025ayuda" target="_blank">
-    Donar Ahora
-  </a>
+  <div class="console-box">
+    <a href="https://link.mercadopago.com.co/donacion2025ayuda" class="donate-btn" target="_blank">Donar Ahora</a>
+  </div>
 
   <footer>
-    <p>Gracias por tu apoyo 🙌</p>
+    &copy; 2025 Proyecto de Programador Independiente
   </footer>
-
 </body>
 </html>
