@@ -5,49 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dona al Código</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Courier New', Courier, monospace;
       background-color: #0d1117;
       color: #c9d1d9;
-      font-family: 'Courier New', Courier, monospace;
+    }
+    body {
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
+      align-items: center;
       text-align: center;
+      padding: 20px;
     }
     h1 {
+      font-size: 2.8em;
       color: #58a6ff;
-      font-size: 2.5em;
       margin-bottom: 20px;
     }
     p {
+      font-size: 1.4em;
       color: #8b949e;
-      font-size: 1.2em;
-      margin-bottom: 30px;
-      max-width: 500px;
+      max-width: 600px;
+      margin: 0 0 30px;
     }
     .console-box {
       background-color: #161b22;
       border: 1px solid #30363d;
       padding: 30px 20px;
       border-radius: 10px;
-      max-width: 90%;
       width: 100%;
+      max-width: 400px;
       box-shadow: 0 0 10px #00000055;
     }
     .donate-btn {
       background-color: #238636;
       color: white;
       text-decoration: none;
-      padding: 15px 35px;
+      padding: 16px 40px;
       border-radius: 8px;
-      font-size: 18px;
+      font-size: 20px;
       display: inline-block;
       margin-top: 10px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s ease;
     }
     .donate-btn:hover {
       background-color: #2ea043;
@@ -59,11 +65,14 @@
     }
     @media (max-width: 480px) {
       h1 {
-        font-size: 2em;
+        font-size: 2.2em;
+      }
+      p {
+        font-size: 1.2em;
       }
       .donate-btn {
-        padding: 12px 24px;
-        font-size: 16px;
+        font-size: 18px;
+        padding: 14px 30px;
       }
     }
   </style>
